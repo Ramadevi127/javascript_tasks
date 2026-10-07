@@ -1,0 +1,215 @@
+//if-else
+
+//1
+    // let x=12
+    // if(x>=100&&x<=999){
+    //     console.log("it is a  3 digit number");
+    // }
+    // else{
+    //      console.log("not a 3 digit num");
+         
+    // }
+
+//2
+    //  let x=10
+    //  if(x%3==0&& x%5==0){
+    //     console.log("given num is divisible");  
+    //  }
+    //  else{
+    //     console.log("not divisible");  
+    //  }
+//3
+    // let s1=20
+    // let s2=50
+    // let s3=90
+    // let b=s1+s2
+    // if(b>s3){
+    //     console.log("valid traingle"); 
+    // }
+    // else{
+    //     console.log("invalid traingle");
+    // }
+//4
+    // let a=55
+    // if(a%10==0){
+    //     console.log("it is divisible by 10"); 
+    // }
+    // else{
+    //     console.log("it is not divisible by 10"); 
+    // }
+//if-elif-else
+//1
+    // let s1=30
+    // let s2=10
+    // let s3=20
+    // if(s1==s2&& s2==s3){
+    //     console.log("equaliteral traingle"); 
+    // }
+    // else if((s1==s2||s2==s3)||s1==s3){
+    //     console.log("isoscles traingle");   
+    // }
+    // else {
+    //     console.log("scalen traingle");   
+    // }
+    
+//2
+// let unit=205
+// bill=0
+// if(unit<=100){
+//     bill=unit*2
+//     console.log("bill:",bill);
+// }
+// else if(unit>=101&unit<=200){
+//     bill=unit*3
+//     console.log("bill:",bill);
+    
+// }
+// else if(unit>=201& unit<=300){
+//      bill=unit*5
+//     console.log("bill:",bill);
+// }
+// else {
+//      bill=unit*7
+//     console.log("bill:",bill);
+// }
+    
+    
+//3
+// age=17
+// if(age<13){
+//     console.log("child");
+    
+// }
+// else if(age>=13& age<=19){
+//     console.log("teenager");
+// }
+// else if(age>=20&age<59){
+//     console.log("adult");
+// }
+// else{
+//     console.log("senior sitizen");
+// }
+
+//4
+// let bill=5000
+// discount=0
+// if(bill<1000){
+//     console.log(discount,"no discount");
+// }
+// else if(bill>=1000&bill<=4999){
+//       discount=bill*(10/100)
+//       amount=bill-discount
+//       console.log("bill:",bill);
+//       console.log("discount",discount)
+//       console.log("amount",amount)
+// }
+// else if(bill>=5000&bill<=9999){
+//     discount=bill*(20/100)
+//       amount=bill-discount
+//        console.log("bill:",bill);
+//       console.log("discount",discount)
+//       console.log("amount",amount)
+// }
+// else{
+//     discount=bill*(30/100)
+//       console.log("bill:",bill);
+//       console.log("discount",discount)
+//       console.log("amount",amount)
+// }
+
+
+//5
+// let month=4
+// if(month>3&month<=5){
+//     console.log("spring");
+    
+// }
+// else if(month>=6&month<=8){
+//      console.log("summer");
+// }
+// else if(month>=9&month<=11){
+//      console.log("autum");
+// }
+// else{
+//      console.log("winter");
+// }
+
+//6
+// let y=2050
+// if(y%400==0){
+//      console.log("leap year");
+// }
+// else if(y % 4 == 0 & y % 100 != 0){
+//      console.log("leap year");
+// }
+// else{
+//     console.log(" not leap year");
+// }
+
+
+//nested if
+// let age=57
+// let weight=41
+// if(age>=18&age<=60){
+//     if(weight>=50){
+//         console.log("eligible to donate");  
+//     }
+//     else{
+//         console.log("weight not suitable");
+        
+//     }
+// }
+// else{
+//     console.log("age not suitable");
+   
+// }
+
+
+//2
+// let s1=10
+// let s2=10
+// let s3=20
+// let s4=20
+// let avg=(s1+s2+s3+s4)/4
+// if(avg>=90){
+    
+//     {
+//         console.log("grade is O :" ,avg);
+//     }
+//      if(avg>=80 && avg<90){
+//         console.log("grade is A :" ,avg);
+//     }
+//      if(avg>=60 && avg<80){
+//         console.log("grade is B :" ,avg);
+//     }
+//     if(avg>=50 && avg<60){
+//         console.log("grade is C :" ,avg);
+//     }
+//      if(avg>=40 && avg<50){
+//         console.log("grade is D :" ,avg);
+//     }
+// }
+// else{
+//         console.log("student fail");
+//     }
+
+
+//3
+let age=92
+score=87
+if(age>=87){
+       if(score>86){
+        console.log("eligible"); 
+       }
+       else{
+        console.log("not eligble due to score");
+        
+       }
+}
+else{
+    console.log("not eligible");
+    
+}
+
+
+
