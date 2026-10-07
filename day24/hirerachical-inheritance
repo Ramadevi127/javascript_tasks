@@ -1,0 +1,122 @@
+//class person-->student & techer
+class person{
+    constructor(name){
+        this.a=name
+    }
+    show(){
+        console.log("name:",this.a);      
+    }}
+class student extends person{
+    constructor(name,student){
+        super(name,student)
+        this.b=student
+    }
+    showstu(){
+        super.show()
+        console.log("student:",this.b);       
+    }}
+class teacher  extends person{
+    constructor(name,teacher){
+        super(name,teacher)
+        this.c=teacher}
+    showteach(){
+        super.show()
+        console.log("teacher:",this.c);    
+    }}
+let e=new teacher("rama","belongs to person")
+e. showteach()
+let f=new student("rama","belongs to person")
+f.showstu()
+
+
+// employee-->developer &manager
+class Employee {
+    constructor(name,id) {
+        this.a = name;
+        this.b = id;}
+    display() {
+        console.log("Name:",this.a);
+        console.log("ID:",this.b);
+    }}
+class Developer extends Employee {
+    constructor(name,id,language) {
+        super(name,id);
+        this.c=language;}
+    showDeveloper() {
+        super.display();
+        console.log("Language:", this.c);
+    }}
+class Manager extends Employee {
+    constructor(name,id,team) {
+        super(name,id);
+        this.team =team;
+    }
+    showManager() {
+        super.display();
+        console.log("Team:", this.team);
+    }}
+let d=new Developer("Rama",101,"Python");
+d.showDeveloper();
+let m=new Manager("hasini", 102, 10);
+m.showManager();
+
+// vehicle-->car & bike
+class vehicle{
+    constructor(name){
+        this.a=name
+    }
+    show(){
+        console.log("name:",this.a);   
+    }}
+class car extends vehicle{
+    constructor(name,type1){
+        super(name)
+        this.b=type1 }
+    show1(){
+        super.show()
+        console.log("type1:",this.b);     
+    }}
+class bike extends vehicle{
+    constructor(name,type2){
+        super(name)
+        this.c=type2
+    }
+    show2(){
+        super.show()
+        console.log("type2:",this.c);
+     
+    }}
+let e=new bike("vehicle","bike")
+e.show2()
+let f=new car("vehicle","car")
+f.show1()
+
+
+//innomatics-->teacher & students
+class innomatics{
+    constructor(name){
+        this.a=name
+    }
+    show(){
+        console.log("name:",this.a);       
+    }}
+class teacher extends innomatics{
+    constructor(name,access1){
+        super(name)
+        this.b=access1  }
+    show1(){
+        super.show()
+        console.log("access1:",this.b);      
+    }}
+class students extends innomatics{
+    constructor(name,access2){
+        super(name)
+        this.c=access2  }
+    show2(){
+        super.show()
+        console.log("access2:",this.c);     
+    }}
+let f=new students("innomatics","students")
+f.show2()
+let g=new teacher("innomatics","teachers")
+g.show1()
