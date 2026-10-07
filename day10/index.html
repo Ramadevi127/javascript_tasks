@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+// *****
+// 12345
+// *****
+// 12345
+// *****
+         for(let j=1;j<=5;j++){
+            for(let i=1;i<=5;i++){
+              if(j==1 ||j==3||j==5){
+                document.write("*")
+              }
+                
+              else{
+                document.write(i)
+              }
+            }
+            document.write("<br>")
+         }
+
+
+
+
+    for(let  j=1;j<=5;j++){
+        for(let i=1;i<=5;i++){
+            if(i==1||i==3||i==5){
+                document.write("*")
+            }
+            else{
+                document.write("&nbsp;")
+            }
+        }
+        document.write("<br>")
+    }
+
+
+
+
+//  12*45
+// 12*45
+// *****
+// 12*45
+// 12*45
+    for(let j=1;j<=5;j++){
+        for(let i=1;i<=5;i++){
+           if(i==3 || j==3){
+            document.write("*")
+           }
+           else{
+            document.write(i)
+           }
+        }
+        document.write("<br>")
+    }
+
+
+
+
+// *****
+// *234*
+// *234*
+// *234*
+// *****
+for(let j=1;j<=5;j++){
+    for(let i=1;i<=5;i++){
+        if(j==1||j==5||i==1||i==5){
+            document.write("*")
+        }
+        else{
+            document.write(i)
+        }
+       
+    }
+    document.write("<br>")
+}
+
+
+
+
+// *******
+// 1234567
+// 1234567
+// *******
+// 1234567
+// 1234567
+// *******
+
+for(let j=1;j<=7;j++){
+
+for(let i=1;i<=7;i++){
+  if(j==1||j==4||j==7){
+    document.write("*")
+  }
+  else{
+     document.write(i)
+  }
+}
+document.write("<br>")
+}
+
+
+
+
+
+// ****    *
+//       *    *
+//       *    *
+// *******
+// *    *      
+// *    *      
+// *    ****
+for(let j=1;j<=7;j++){
+for(let i=1;i<=7;i++){
+   if(i==4||j==4||j==1&i<=4||i==7&j<=4||j==7&i>=4||i==1&j>=4){
+    document.write("*")
+   }
+   else{
+    document.write("&nbsp;&nbsp;")
+   }
+}
+document.write("<br>")
+}
+
+
+
+
+// *        
+//   *      
+//     *    
+//       *  
+//         *
+for(let j=1;j<=5;j++){
+    for(let i=1;i<=5;i++){
+        if(i==j){
+            document.write("*")
+        }
+        else{
+             document.write("&nbsp;&nbsp;")
+        }
+    }
+    document.write("<br>")
+}
+
+
+
+
+
+
+// *              *
+//   *          *  
+//     *      *    
+//       *  *      
+//         *        
+//       *  *      
+//     *      *    
+//   *          *  
+// *              *
+for(let j=1;j<=9;j++){
+    for(let i=1;i<=9;i++){
+       if(j==i||j+i==10){
+         document.write("*")
+       }
+       else{
+         document.write("&nbsp;&nbsp;")
+       }
+    }
+    document.write("<br>")
+}
+
+
+
+
+
+
+// *          *
+//   *      *  
+//     *  *    
+//       *      
+//       *      
+//       *      
+//       *  
+for(let j=1;j<=7;j++){
+    for(let i=1;i<=7;i++){
+        if(i==4&j>=4||j==i&j<=4||j+i==8&j<=4){
+             document.write("*")
+        }
+         else{
+         document.write("&nbsp;&nbsp;")
+       }
+    }
+    document.write("<br>")
+}
+
+
+
+
+
+
+// *  ***
+// *  *    
+// *****
+//     *  *
+// ***  *
+for(let j=1;j<=5;j++){
+for(let i=1;i<=5;i++){
+   if(i==3||j==3||j==1&i>=3||i==1&j<=3||i==5&j>=3||j==5&i<=3){
+    document.write("*")
+   }
+   else{
+    document.write("&nbsp;&nbsp;")
+   }
+}
+document.write("<br>")
+}
+   
+
+
+      
+for(let j=1;j<=7;j++){
+    for(let i=1;i<=9;i++){
+       if(j==3||j==5||j+i==6||i-j==4||j-i==2||j+i==12)
+       {
+         document.write("*")
+       }
+       else{
+         document.write("&nbsp;&nbsp;")
+       }
+    }
+     document.write("<br>")
+}
+
+
+
+
+// *      *
+// **    *
+// *  *  *
+// *    **
+// *      *
+
+for(let j=1;j<=5;j++){
+    for(let i=1;i<=5;i++){
+       if(i==1||i==5||j==i){
+        document.write("*")
+       }
+       else{
+          document.write("&nbsp;&nbsp;")
+       }
+    }
+     document.write("<br>")
+}
+
+
+
+
+
+
+
+
+   1
+// 22
+// 333
+// 4444
+55555
+        for(let j=1;j<=5;j++){
+            for(let i=1;i<=j;i++){
+                document.write(j)
+            }
+            document.write("<br/>")
+        }
+
+
+
+// 5
+// 44
+// 333
+// 2222
+// 11111
+        for(let j=5; j>=1; j--){
+            for(let i=5; i>=j; i--){
+                document.write(j)
+            }
+            document.write("<br/>")
+        }
+
+
+
+
+// 1
+// 12
+// 123
+// 1234
+// 12345
+        for(let j=1;j<=5;j++){
+            for(let i=1;i<=j;i++){
+                document.write(i)
+            }
+            document.write("<br/>")
+        }
+ 
+
+
+// 54
+// 543
+// 5432
+// 54321
+    for(let j=5; j>=1; j--){
+        for(let i=5; i>=j; i--){
+            document.write(i)
+        }
+        document.write("<br/>")
+    }
+
+
+// 1
+// 21
+// 321
+// 4321
+// 54321
+
+
+    for(let j=1; j<=5; j++){
+        for(let i=j; i>=1; i--){
+            document.write(i)
+        }
+        document.write("<br/>")
+    }
+
+
+// 5
+// 45
+// 345
+// 2345
+// 12345
+    for(let j=5; j>=1; j--){
+        for(let i=j; i<=5; i++){
+            document.write(i)
+        }
+        document.write("<br/>")
+    }
+
+    
+// 54321
+// 5432
+// 543
+// 54
+// 5
+    for(let j=1; j<=5; j++){
+        for(let i=5; i>=j; i--){
+            document.write(i)
+        }
+        document.write("<br/>")
+    }
+
+
+// 12345
+// 1234
+// 123
+// 12
+// 1
+    for(let j=5; j>=1; j--){
+        for(let i=1; i<=j; i++){
+            document.write(i)
+        }
+        document.write("<br/>")
+    }
+
+
+// 12345
+// 2345
+// 345
+// 45
+// 5
+    for(let j=1; j<=5; j++){
+        for(let i=j; i<=5; i++){
+            document.write(i)
+        }
+        document.write("<br/>")
+    }
+
+
+// 54321
+// 4321
+// 321
+// 21
+// 1
+    for(let j=5; j>=1; j--){
+        for(let i=j; i>=1; i--){
+            document.write(i)
+        }
+        document.write("<br/>")
+    }
+
+            // 55555
+    //       4444
+    //        333
+    //         22
+    // //       1
+    for(let j=5;j>=1;j--){
+        for(let s=5;s>j;s--){
+            document.write("&nbsp;&nbsp;")
+        }
+        for(let i=1;i<=j;i++){
+            document.write(j)
+        }
+        document.write("<br/>")
+    }
+     document.write("<br/>")
+
+
+
+    //     1
+    //    22
+    //   333
+    //  4444
+    // 55555
+       for(let j=1;j<=5;j++){
+        for(let s=5;s>j;s--){
+            document.write("&nbsp;&nbsp;")
+        }
+             for(let i=1;i<=j;i++){
+                document.write(j)
+             }
+             document.write("</br>")
+       }
+
+     document.write("<br/>")
+
+
+        //     1
+        //    12
+        //   123
+        //  1234
+        // 12345
+        for(let j=1;j<=5;j++){
+            for(let s=5;s>j;s--){
+                document.write("&nbsp;&nbsp;")
+            }
+            for(let i=1;i<=j;i++){
+                document.write(i)
+            }
+            document.write("<br/>")
+        }
+
+         document.write("<br/>")
+
+
+        //      1
+        //     21
+        //    321
+        //   4321
+        //  54321
+        for(let j=1;j<=5;j++){
+            for(let s=5;s>j;s--){
+                document.write("&nbsp;&nbsp;")
+            }
+            for(let i=j;i>=1;i--){
+                document.write(i)
+            }
+            document.write("<br/>")
+        }
+
+
+         document.write("<br/>")
+    
+    //       5
+    //      54
+    //     543
+    //    5432
+    //   54321
+    for(let j=5;j>=1;j--){
+        for(let s=1;s<j;s++){
+            document.write("&nbsp;&nbsp;")
+        }
+        for(let i=5;i>=j;i--){
+            document.write(i)
+        }
+        document.write("<br/>")
+    }
+
+    document.write("<br/>")
+
+        //     5
+        //    45
+        //   345
+        //  2345
+        // 12345
+        for(let j=5;j>=1;j--){
+            for(let s=1;s<j;s++){
+                document.write("&nbsp;&nbsp;")
+            }
+            for(let i=j;i<=5;i++){
+                document.write(i)
+            }
+            document.write("<br/>")
+        }
+
+      document.write("<br/>")
+        // 54321
+        //  5432
+        //   543
+        //    54
+        // //  5
+        for(let j=1;j<=5;j++){
+            for(let s=1;s<=j;s++){
+                document.write("&nbsp;&nbsp;")
+            }
+            for(let i=5;i>=j;i--){
+                document.write(i)
+                
+            }
+            document.write("<br/>")
+        }
+
+
+        // 54321
+        //  4321
+        //   321
+        //    21
+        //     1
+        for(let j=5;j>=1;j--){
+            for(let s=5;s>j;s--){
+                document.write("&nbsp;&nbsp;")
+            }
+            for(let i=j;i>=1;i--){
+                document.write(i)
+            }
+            document.write("<br/>")
+        }
+
+
+        // 12345
+        //  1234
+        //   123
+        //    12
+        //     1
+        for(let j=5;j>=1;j--){
+            for(let s=5;s>j;s--){
+                document.write("&nbsp;&nbsp;")
+            }
+            for(let i=1;i<=j;i++){
+                document.write(i)
+            }
+            document.write("<br/>")
+        }
+
+
+        // 12345
+        //  2345
+        //   345
+        //    45
+        //     5
+        for(let j=1;j<=5;j++){
+            for(let s=1;s<j;s++){
+                document.write("&nbsp;&nbsp;")
+            }
+            for(let i=j;i<=5;i++){
+                document.write(i)
+            }
+            document.write("<br/>")
+        }
+        //  1
+//         212
+//        32123
+//       4321234
+//      543212345
+
+
+        for(let j=1;j<=5;j++){
+            for(let s=5;s>j;s--){
+                document.write("&nbsp;&nbsp;")
+            }
+            for(let i=j;i>=1;i--){
+                document.write(i)
+            }
+            for(let k=2;k<=j;k++){
+                document.write(k)
+            }
+             document.write("<br/>")
+        }
+           
+//         5
+//        454
+//       34543
+//      2345432
+//     123454321
+  
+
+        document.write("<br/>")
+        for(let j=5;j>=1;j--){
+            for(let s=1;s<j;s++){
+                document.write("&nbsp;&nbsp;")
+            }
+            for(let i=j;i<=5;i++){
+                document.write(i)
+            }
+            for(let k=4;k>=j;k--){
+                document.write(k)
+            }
+            document.write("<br/>")
+        }
+
+
+        document.write("<br/>")
+
+//            1
+//           121
+//          12321
+//         1234321
+//        123454321
+
+       for(let j=1;j<=5;j++){
+        for(let s=5;s>j;s--){
+            document.write("&nbsp;&nbsp;")
+        }
+        for(let i=1;i<=j;i++){
+            document.write(i)
+        }
+        for(let k=j-1;k>=1;k--){
+            document.write(k)
+        }
+        document.write("<br/>")
+       }
+
+
+        document.write("<br/>")
+
+
+//            5
+//           545
+//          54345
+//         5432345
+//        543212345
+        for(let j=5;j>=1;j--){
+            for(let s=1;s<j;s++){
+                document.write("&nbsp;&nbsp")
+            }
+            for(let i=5;i>=j;i--){
+                document.write(i)
+            }
+            for(let k=j+1;k<=5;k++){
+                document.write(k)
+            }
+            document.write("</br>")
+        }
+
+         document.write("</br>")
+ 
+//           1
+//          222
+//         33333
+//        4444444
+//       555555555
+         for(let j=1;j<=5;j++){
+            for(let s=5;s>j;s--){
+                document.write("&nbsp;&nbsp;")
+            }
+            for(let i=1;i<=j;i++){
+                document.write(j)
+            }
+            for(let k=1+1;k<=j;k++){
+                document.write(j)
+            }
+            document.write("<br/>")
+         }
+        
+
+          document.write("</br>")
+
+
+//             5
+//            444
+//           33333
+//          2222222
+//         111111111
+
+          for(let j=5;j>=1;j--){
+            for(let s=1;s<j;s++){
+                document.write("&nbsp;&nbsp;")
+            }
+            for(let i=5;i>=j;i--){
+                document.write(j)
+            }
+            for(let k=4+1;k>j;k--){
+                document.write(j)
+            }
+            document.write("<br/>")
+          }
+          
+
+           document.write("</br>")
+
+
+//            555555555
+//             4444444
+//              33333
+//               222
+//                1
+
+           for(let j=5;j>=1;j--){
+            for(let s=5;s>j;s--){
+                document.write("&nbsp;&nbsp;")
+            }
+            for(let i=1;i<=j;i++){
+                document.write(j)
+            }
+            for(let k=j-1;k>=1;k--){
+                document.write(j)
+            }
+            document.write("<br/>")
+           }
+
+
+           document.write("<br/>")
+
+
+//            111111111
+//             2222222
+//              33333
+//               444
+//                5
+
+
+           for(let j=1;j<=5;j++){
+            for(let s=1;s<j;s++){
+                document.write("&nbsp;&nbsp;")
+            }
+            for(let i=5;i>=j;i--){
+                document.write(j)
+            }
+            for(let k=j+1;k<=5;k++){
+                document.write(j)
+            }
+            document.write("<br/>")
+           }
+
+            
+            document.write("<br/>")
+    </script>
+</body>
+</html>
