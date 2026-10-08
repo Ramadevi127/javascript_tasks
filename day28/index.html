@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            height:80vh;
+            width:80vw;
+            border:2px solid;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+             gap:10px;
+        }
+        .box{
+            height:200px;
+            width:200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color:white;
+            font-size:30px;
+           
+            
+           
+        }
+.box1{
+    background-color: aqua;
+    transition:all 2s linear;
+    
+}
+.box2{
+    background-color: bisque;
+    transition: all 2s linear;
+}
+.box3{
+    background-color: rgb(13, 76, 13);
+    animation-name:box-right ;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.box4{
+    background-color: olive;
+    animation-name:box-left ;
+    animation-timing-function: linear;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.box1:hover{
+     transform:rotatex(-180deg);
+     background-color: green;
+}
+.box2:hover{
+    transform:rotatey(180deg);
+    background-color: blue;
+}
+
+@keyframes box-right{
+    from{
+       transform: rotatex(0deg);
+
+    }
+    to{
+        transform:rotatex(180deg) ;
+        background-color: blueviolet;
+    }
+}
+@keyframes box-left{
+    from{
+        transform: rotatey(0deg);
+    }
+    to{
+        transform: rotatey(180deg);
+        background-color: orange;
+    }
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box box1">Front</div>
+        <div class="box box2">Front</div>
+        <div class="box box3">Front</div>
+        <div class="box box4">Front</div>
+    </div>
+</body>
+</html>
