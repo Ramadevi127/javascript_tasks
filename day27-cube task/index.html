@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.container{
+    height:100vh;
+    width:100vw;
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cube{
+    height:200px;
+    width:200px;
+    position:relative;
+    transform-style: preserve-3d;
+    animation-name: rotatecube;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    
+
+}
+.box{
+    height:200px;
+    width:200px;
+    position: absolute;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border: 2px solid;
+   color:white;
+   font-size: 20px;
+   font-weight: bold;
+
+}
+.box1{
+    background-color: blue;
+   transform:translateZ(100px);
+}
+ .box2{
+    background-color: rgb(167, 16, 139);
+    transform:rotateY(180deg) translatez(100px);
+}
+.box3{
+     background-color: rgb(62, 112, 8);
+    transform:rotateY(90deg) translateZ(100px);
+}
+.box4{
+     background-color: rgb(226, 248, 58);
+     transform:rotatey(-90deg) translateZ(100px);
+    }
+.box5{
+     background-color: rgb(247, 158, 160);
+  transform:rotateX(90deg) translateZ(100px);
+}
+.box6{
+     background-color: rgb(130, 9, 9);
+ transform:rotateX(-90deg) translateZ(100px);
+} 
+@keyframes rotatecube{
+    0%{
+        transform: rotatex(0deg) rotatey(0deg);
+    }
+    
+    100%{
+         transform: rotatex(360deg) rotatey(360deg);
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="cube">
+   <div class="box box1">front</div>
+   <div class="box box2">back</div>
+   <div class="box box3">right</div>
+   <div class="box box4">left</div>
+   <div class="box box5">top</div>
+   <div class="box box6">bottom</div>
+   </div>
+   </div>
+</body>
+</html>
